@@ -82,9 +82,34 @@ class NotesWindow(QtWidgets.QMainWindow):
         else:
             QtWidgets.QMessageBox.warning(self, "Помилка", "Замітка для додавання тега не обрана!")
 
+    def del_tag(self):
+        if self.ui.listWidget_2.currentItem():
+            key = self.ui.listWidget.currentItem().text()
+            tag = self.ui.listWidget_2.currentItem().text()
+            self.notes[key]["теги"].remove(tag)
+            self.ui.listWidget_2.clear()
+            self.ui.listWidget_2.addItems(self.notes[key]["теги"])
+            self.save_to_file()
+        else:
+            QtWidgets.QMessageBox.warning(
+                self, "Помилка", "Тег для видалення не обраний!"
+            )
 
+    def search_tag(self):
+        tag = self.ui.lineEdit.text()
+        if self.ui.pushButton_6.text() == "Шукати замітки по тегу" and tag:
+            notes_filtered = {k: v for k, v in self.notes.items() if tag in v["теги"]}
+            self.ui.listWidget.clear()
+            self.ui.listWidget.addItems(notes_filtered)
+            self.ui.pushButton_6.setText("Скинути пошук")
+        elif self.ui.pushButton_6.text() == "Скинути пошук":
+            self.ui.listWidget.clear()
+            self.ui.listWidget.addItems(self.notes)
+            self.ui.lineEdit.clear()
+            self.ui.pushButton_6.setText("Шукати замітки по тегу")
 
-
-
-
-
+import sys
+app = QtWidgets.QApplication(sys.argv)
+mainWindow = NotesWindow()
+mainWindow.show()
+sys.exit(app.exec_())
