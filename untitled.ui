@@ -28,13 +28,6 @@
       <height>181</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-      <bold>false</bold>
-      <weight>50</weight>
-     </font>
-    </property>
     <property name="styleSheet">
      <string notr="true">background:#2c3e50; color:#ecf0f1; border: 2px solid #f1c40f;</string>
     </property>
@@ -47,13 +40,6 @@
       <width>431</width>
       <height>181</height>
      </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-      <bold>false</bold>
-      <weight>50</weight>
-     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">background:#2c3e50; color:#ecf0f1; border: 2px solid #f1c40f;</string>
@@ -68,13 +54,6 @@
       <height>181</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-      <bold>false</bold>
-      <weight>50</weight>
-     </font>
-    </property>
     <property name="styleSheet">
      <string notr="true">background:#2c3e50; color:#ecf0f1; border: 2px solid #f1c40f;</string>
     </property>
@@ -88,21 +67,114 @@
       <height>28</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-      <bold>false</bold>
-      <weight>50</weight>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background:#d35400; color:#f1c40f; border: 2px solid #e74c3c;</string>
-    </property>
     <property name="text">
      <string>Створити заклинання</string>
     </property>
    </widget>
-   <!-- Другие виджеты будут добавлены аналогично -->
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>420</y>
+      <width>121</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Видалити</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>382</x>
+      <y>420</y>
+      <width>121</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Зберегти магію</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>410</y>
+      <width>241</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Введіть магічний тег:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>440</y>
+      <width>251</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Додати заклинання до тегу</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>480</y>
+      <width>251</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Зняти заклинання з тегу</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>460</y>
+      <width>431</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>🔮 Шукати заклинання за тегом 🔮</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>200</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Гримоар</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>200</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Теги магії</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -116,4 +188,6 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <resources/>
+ <connections/>
 </ui>
