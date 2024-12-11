@@ -16,9 +16,19 @@
    </font>
   </property>
   <property name="styleSheet">
-   <string notr="true">background:#000000; color:#f1c40f;</string>
+   <string notr="true">background-image: url(“image.jpg”);
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">MainWindow {
+    background-image: url(imageі.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</string>
+   </property>
    <widget class="QTextEdit" name="textEdit">
     <property name="geometry">
      <rect>
@@ -182,7 +192,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>23</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
