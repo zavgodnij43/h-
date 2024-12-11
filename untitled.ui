@@ -59,6 +59,26 @@
      <string notr="true">background:#2c3e50; color:#ecf0f1; border: 2px solid #f1c40f;</string>
     </property>
    </widget>
+   <widget class="QListWidget" name="listWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>535</x>
+      <y>221</y>
+      <width>241</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>false</bold>
+      <weight>50</weight>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:#2c3e50; color:#ecf0f1; border: 2px solid #f1c40f;</string>
+    </property>
+   </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
@@ -82,7 +102,7 @@
      <string>Створити заклинання</string>
     </property>
    </widget>
-   <!-- Прочие элементы интерфейса будут добавлены по аналогии -->
+   <!-- Другие виджеты будут добавлены аналогично -->
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
